@@ -15,12 +15,11 @@ def fizz_buzz(fizz=3, buzz=5, up_to=15):
     result = []
     while x <= up_to:
         string = ""
-        if x % 3 == 0:
+        if x % 3 == 0: # If x can be divided by 3
             string += "Fizz"
-        if x % 5 == 0:
+        if x % 5 == 0: # If x can be divided by 5
             string += "Buzz"
-        print((x, (str(x) if string == "" else string)))
+        print((x, (str(x) if string == "" else string))) # Print x and its outcome.
         x += 1
-
 
 fizz_buzz(3, 5, 56)
