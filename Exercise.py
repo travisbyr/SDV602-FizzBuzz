@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+import numpy as np
 # def fizz_buzz(number):
 #     if number % 3 == 0 and number % 5 == 0:
 #         print("fizzbuzz")
@@ -23,3 +25,6 @@ def fizz_buzz(fizz=3, buzz=5, up_to=15):
         x += 1
 
 fizz_buzz(3, 5, 56)
+
+fig, ax = plt.subplots()  # Create a figure containing a single axes.
+ax.plot([1, 2, 3, 4], [1, 4, 2, 3])  # Plot some data on the axes.
